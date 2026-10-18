@@ -1,0 +1,72 @@
+[
+  {
+    "id": "pistol",
+    "name": "Pistol",
+    "fireRate": 1000,
+    "range": 500,
+    "attack": 3,
+    "price": 0,
+    "imagePath": "Ybow_snail.png",
+    "bulletImage": ""
+  },
+  {
+    "id": "rifle",
+    "name": "Assault Rifle",
+    "fireRate": 1000,
+    "range": 500,
+    "attack": 3,
+    "price": 50,
+    "imagePath": "arrow_snail.png",
+    "bulletImage": ""
+  },
+  {
+    "id": "sniper",
+    "name": "Sniper",
+    "fireRate": 1000,
+    "range": 500,
+    "attack": 3,
+    "price": 100,
+    "imagePath": "snipper_snail.png",
+    "bulletImage": ""
+  },
+  {
+    "id": "rocket",
+    "name": "Rocket Launcher",
+    "fireRate": 1000,
+    "range": 500,
+    "attack": 3,
+    "price": 250,
+    "imagePath": "rocket_snail.png",
+    "bulletImage": ""
+  },
+  {
+    "id": "ybow_tur",
+    "name": "Ybow Tur",
+    "fireRate": 1000,
+    "range": 500,
+    "attack": 3,
+    "price": 200,
+    "imagePath": "Ybow_tur.png",
+    "bulletImage": ""
+  },
+  {
+    "id": "arrow_tur",
+    "name": "Arrow Tur",
+    "fireRate": 1000,
+    "range": 500,
+    "attack": 3,
+    "price": 250,
+    "imagePath": "arrow_tur.png",
+    "bulletImage": ""
+  },
+  {
+    "id": "arrow_dog",
+    "name": "Arrow Dog",
+    "fireRate": 1000,
+    "range": 500,
+    "attack": 3,
+    "price": 250,
+    "imagePath": "arrow_dog.png",
+    "bulletImage": ""
+  }
+]

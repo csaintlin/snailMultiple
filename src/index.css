@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Rowdies:wght@400;700&display=swap');
+
+:root {
+  --font-body: 'Outfit', sans-serif;
+  --font-heading: 'Rowdies', cursive;
+  
+  --bg-gradient: linear-gradient(135deg, #1b2735 0%, #090a0f 100%);
+  --surface: rgba(255, 255, 255, 0.05);
+  --surface-hover: rgba(255, 255, 255, 0.1);
+  --border: rgba(255, 255, 255, 0.1);
+  
+  --primary: #4ecca3;
+  --primary-glow: rgba(78, 204, 163, 0.5);
+  --secondary: #e2f1f8;
+  --accent: #ff6b6b;
+  --accent-glow: rgba(255, 107, 107, 0.5);
+  
+  --text-main: #f8f9fa;
+  --text-muted: #adb5bd;
+
+  --shadow-sm: 0 4px 6px rgba(0,0,0,0.1);
+  --shadow-lg: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-gradient);
+  color: var(--text-main);
+  min-height: 100vh;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+}
+
+button {
+  font-family: var(--font-body);
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Common premium UI classes */
+.glass-panel {
+  background: var(--surface);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  box-shadow: var(--shadow-lg);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: #1a1a2e;
+  font-weight: 800;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 0 25px var(--primary-glow);
+}
+
+.btn-primary:active {
+  transform: translateY(1px) scale(0.95);
+}
+
+.btn-disabled {
+  background: var(--surface);
+  color: var(--text-muted);
+  cursor: not-allowed;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.screen-container {
+  width: 100vw;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Animations that will be used */
+@keyframes wobble {
+  0%, 100% { transform: rotate(-5deg); }
+  50% { transform: rotate(5deg); }
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Snail Sprite Animation */
+.sprite-snail {
+  --sprite-size: 80px;
+  width: var(--sprite-size);
+  height: var(--sprite-size);
+  background-image: url('./assets/snail.png');
+  background-size: calc(var(--sprite-size) * 4) var(--sprite-size);
+  background-repeat: no-repeat;
+  animation: snail-walk 1.6s steps(4) infinite;
+  display: inline-block;
+  image-rendering: auto; /* 啟用平滑反鋸齒處理 (Anti-aliasing) */
+  transform: translateZ(0); /* 啟用硬體加速以獲得最佳邊緣平滑效果 */
+}
+
+@keyframes snail-walk {
+  from { background-position: 0 0; }
+  to { background-position: calc(var(--sprite-size) * -4) 0; }
+}
+
+/* Achievement Animation Keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes popIn {
+  0% { transform: scale(0.3) translateY(-40px); opacity: 0; }
+  65% { transform: scale(1.08) translateY(4px); opacity: 1; }
+  100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+@keyframes pulseGlow {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.5; }
+  100% { transform: translate(-50%, -50%) scale(1.25); opacity: 0.9; }
+}
+

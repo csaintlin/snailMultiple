@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "multiplier": 1,
+        "coinMultiplier": 1
+    },
+    {
+        "id": 2,
+        "multiplier": 2,
+        "coinMultiplier": 1
+    },
+    {
+        "id": 3,
+        "multiplier": 3,
+        "coinMultiplier": 1.5
+    },
+    {
+        "id": 4,
+        "multiplier": 4,
+        "coinMultiplier": 1
+    },
+    {
+        "id": 5,
+        "multiplier": 5,
+        "coinMultiplier": 1.5
+    },
+    {
+        "id": 6,
+        "multiplier": 6,
+        "coinMultiplier": 2
+    },
+    {
+        "id": 7,
+        "multiplier": 7,
+        "coinMultiplier": 2.5
+    },
+    {
+        "id": 8,
+        "multiplier": 8,
+        "coinMultiplier": 2
+    },
+    {
+        "id": 9,
+        "multiplier": 9,
+        "coinMultiplier": 1.5
+    },
+    {
+        "id": 10,
+        "multiplier": 10,
+        "coinMultiplier": 1
+    },
+    {
+        "id": 11,
+        "multiplier": 11,
+        "coinMultiplier": 3
+    },
+    {
+        "id": 12,
+        "multiplier": 12,
+        "coinMultiplier": 3.5
+    }
+]

@@ -1,0 +1,12 @@
+{
+    "small": {
+        "baseHp": 2,
+        "atk": 2,
+        "speed": 20
+    },
+    "large": {
+        "baseHp": 99,
+        "atk": 4,
+        "speed": 20
+    }
+}
